@@ -20,7 +20,7 @@ companySchema.methods.getChildrenCompanies = async function() {
 
         await doc.getChildrenCompanies();
 
-        this.childrenBalance += doc.balance;
+        this.childrenBalance += doc.childrenBalance;
         this.children.push(doc);
     }
 
